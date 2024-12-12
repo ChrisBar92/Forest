@@ -11,12 +11,12 @@ const handleBurger = () => {
 	boxLinks.classList.toggle("active")
 }
 
-const handleYear = () => {
-	const currentYear = new Date()
-	footerYear.textContent = currentYear.getFullYear()
+const handleCurrentYear = () => {
+	const currentYear = new Date().getFullYear()
+	footerYear.textContent = currentYear
 }
 
-handleYear()
+handleCurrentYear()
 
 burgerBtn.addEventListener("click", handleBurger)
 

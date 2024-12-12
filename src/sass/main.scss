@@ -66,6 +66,8 @@ body {
 	&__logo {
 		display: flex;
 		align-items: center;
+		padding: 1rem;
+		padding-left: 0;
 		font-size: 2.4rem;
 		color: #333;
 		text-decoration: none;
@@ -232,6 +234,7 @@ body {
 .offers {
 	&__text {
 		margin-bottom: 1rem;
+		font-size: 1.4rem;
 		text-align: center;
 	}
 
@@ -380,6 +383,61 @@ body {
 	}
 }
 
+.ourofferts {
+	.section-title {
+		margin-bottom: 6rem;
+	}
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+	}
+	&__box {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__img {
+		width: 100%;
+		margin-top: 4rem;
+		margin-bottom: 1rem;
+		object-fit: cover;
+	}
+
+	&__header {
+		margin-bottom: 1rem;
+		font-size: 2.2rem;
+	}
+
+	&__summary {
+		margin-top: 4rem;
+	}
+
+	&__description {
+		font-size: 1.4rem;
+
+		&:last-of-type {
+			margin-top: 1rem;
+		}
+	}
+
+	&__link {
+		padding: 0.2rem;
+		border-bottom: 1px solid transparent;
+		color: rgb(41, 136, 41);
+		font-weight: bold;
+		text-decoration: none;
+		transition: background-color 0.3s, color 0.3s;
+
+		&:hover,
+		&:focus {
+			outline: none;
+			background-color: rgb(41, 136, 41);
+			color: #fff;
+		}
+	}
+}
+
 ///////////////////////////////////////
 
 @media (576px < width) {
@@ -436,6 +494,10 @@ body {
 	}
 
 	.offers {
+		&__text {
+			font-size: 1.6rem;
+		}
+
 		&__box {
 			flex-direction: row;
 			justify-content: space-evenly;
@@ -450,6 +512,12 @@ body {
 	.footer {
 		&__section {
 			margin: 2rem;
+		}
+	}
+
+	.ourofferts {
+		&__description {
+			font-size: 1.6rem;
 		}
 	}
 }
@@ -575,6 +643,16 @@ body {
 			}
 		}
 	}
+
+	.ourofferts {
+		&__header {
+			font-size: 2.4rem;
+		}
+
+		&__img {
+			margin-top: 6rem;
+		}
+	}
 }
 
 @media (992px < width) {
@@ -629,6 +707,43 @@ body {
 
 			&:hover {
 				transform: scale(1.05);
+			}
+		}
+	}
+
+	.ourofferts {
+		&__container {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+
+		&__box {
+			flex-direction: row;
+			width: 100%;
+			margin: 5rem 0;
+		}
+
+		&__text {
+			align-self: center;
+			padding-left: 3rem;
+
+			&--reverse {
+				order: 1;
+			}
+		}
+
+		&__header {
+			font-size: 2.6rem;
+		}
+
+		&__img {
+			margin: 0;
+			width: 50%;
+
+			&--reverse {
+				order: 2;
 			}
 		}
 	}
