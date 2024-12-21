@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
-<body>
+<body class="offers-page">
     <!-- @include 'nav.kit' -->
 
     <header class="header">
@@ -33,7 +33,10 @@
                 <div class="ourofferts__container ">
                     <div class="ourofferts__box">
                         <img src="../img/forest_offerts.small.jpg"
-                            alt="widok promieni słońca przebijających się przez las" class="ourofferts__img">
+                            srcset="../img/forest_offerts.small.jpg 768w, ../img/forest_offerts.big.jpg 1200w"
+                            sizes="(max-width: 768px) 768px, 1200px"
+                            alt="widok promieni słońca przebijających się przez las"
+                            class="ourofferts__img ourofferts__img--one">
                         <div class="ourofferts__text">
                             <h3 class="ourofferts__header">Wyjątkowe wyprawy do lasu</h3>
                             <p class="ourofferts__description">Oferujemy piesze wędrówki z przewodnikiem, który odkryje
@@ -44,6 +47,8 @@
                     </div>
                     <div class="ourofferts__box">
                         <img src="../img/mountains_offerts.small.jpg"
+                            srcset="../img/mountains_offerts.small.jpg 768w, ../img/mountains_offerts.big.jpg 1200w"
+                            sizes="(max-width: 768px) 768px, 1200px"
                             alt="rodzice z dzieckiem w wózku idą polaną w kierunku gór"
                             class="ourofferts__img ourofferts__img--reverse">
                         <div class="ourofferts__text ourofferts__text--reverse">
@@ -55,7 +60,10 @@
                     </div>
                     <div class="ourofferts__box">
                         <img src="../img/walk_offerts.small.jpg"
-                            alt="dwoje dorosłych ludzi idzie asfaltową drogą w lesie" class="ourofferts__img">
+                            srcset="../img/walk_offerts.small.jpg 768w, ../img/walk_offerts.big.jpg 1200w"
+                            sizes="(max-width: 768px) 768px, 1200px"
+                            alt="dwoje dorosłych ludzi idzie asfaltową drogą w lesie"
+                            class="ourofferts__img ourofferts__img--three">
                         <div class="ourofferts__text">
                             <h3 class="ourofferts__header">Leśna regeneracja</h3>
                             <p class="ourofferts__description">Dla tych, którzy szukają głębszego relaksu, oferujemy

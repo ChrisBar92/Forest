@@ -14,9 +14,51 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
-<body>
+<body class="contact-page">
     <!-- @include 'nav.kit' -->
-
+    <header class="header">
+        <div class="wrapper">
+            <h1 class="header__title">Skontaktuj się z nami!</h1>
+        </div>
+        <div class="header__shadow"></div>
+    </header>
+    <main>
+        <section class="contact section" id="contact">
+            <div class="wrapper">
+                <h2 class="section-title">Odpowiemy do 24 godzin!</h2>
+                <p class="contact__text">Wypełnij poniższy formularz, a my skontaktujemy się z Tobą jak najszybciej.</p>
+                <div class="contact__container">
+                    <form class="contact__form">
+                        <label for="name" class="contact__label">Imię i nazwisko:</label>
+                        <input type="text" id="name" class="contact__input" required>
+                        <label for="email" class="contact__label">Adres e-mailowy:</label>
+                        <input type="email" id="email" class="contact__input" required>
+                        <label for="msg" class="contact__label">Wpisz wiadomość:</label>
+                        <textarea name="msg" id="msg" class="contact__textarea" placeholder="Wpisz wiadomość"
+                            required></textarea>
+                        <button type="submit" class="contact__btn">Wyślij</button>
+                    </form>
+                    <div class="contact__map">
+                        <p class="contact__map-title">Nasza siedziba znajduje się tu:</p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.8965598744603!2d19.890257976812325!3d50.08822351337844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a2d7f0d587f%3A0x15f4e7c36adff6d2!2sJasnog%C3%B3rska%202%2C%2031-358%20Krak%C3%B3w!5e0!3m2!1spl!2spl!4v1734309632096!5m2!1spl!2spl"
+                            class="contact__map-route" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="contact__box">
+                        <div class="contact__social">
+                            <i class="contact__social-icon fa-solid fa-phone"></i>
+                            <p class="contact__social-text">+40 000 000 000</p>
+                        </div>
+                        <div class="contact__social">
+                            <i class="contact__social-icon fa-solid fa-envelope"></i>
+                            <p class="contact__social-text">mail@mail.com.pl</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <!-- @include 'footer.kit' -->
 
     <script src="./js/main.min.js"></script>
